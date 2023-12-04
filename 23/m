@@ -1,0 +1,6 @@
+
+set -e
+g++ "$1.cpp" -o "$1.out" -ggdb
+
+echo "out ---------- "
+./"$1.out"
