@@ -35,17 +35,10 @@ int main() {
         /* ans*=tmp; */
 
         // part 2
-        cout << "t=" << a[0][i] << endl;
-        cout << "d=" << a[1][i] << endl;
-        cout << "this is the 0th size" << a[0][i].size()  << endl;
-        cout << "this is the 1th size" << a[1][i].size()  << endl;
         time = time*(pow(10, (a[0][i]).size()))+stoi(a[0][i]);
         dist = dist*(pow(10, (a[1][i]).size()))+stoi(a[1][i]);
-        
-    cout << "time " << time << " dist " << dist << endl;
     }
     /// part 2
-    cout << "time " << time << " dist " << dist << endl;
     for (int j=0; j<time; ++j) { 
         if (j*(time-j) > dist)  {ans++;}
     }
