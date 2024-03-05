@@ -1,5 +1,11 @@
 
 set -e
+
+if [ $# == 0 ]; then
+    echo "usage: ./m 2"
+    exit
+fi
+
 g++ "$1.cpp" -o "$1.out" -ggdb
 
 echo "out ---------- "
